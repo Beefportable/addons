@@ -7,7 +7,7 @@ YEAR=$(jq --raw-output ".year" $CONFIG_PATH)
 
 echo "Year entered is $YEAR"
 date
-sudo service ntp stop
-sudo ntpd -gq
-sudo service ntp start
+service ntp stop
+ntpd -gq
+service ntp start
 date
