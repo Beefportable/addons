@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "name": "time_date_update",
   "version": "1",
@@ -21,4 +22,29 @@
     "minute": "int",
 	"second": "int"
   }
+=======
+{
+  "name": "time_date_update",
+  "version": "1",
+  "slug": "time_date_update",
+  "description": "Set time and date",
+  "startup": "before",
+  "boot": "auto",
+  "options": {
+    "year": 2018,
+    "month": 2,
+    "day": 28,
+    "hour": 11,
+    "minute": 45,
+	"second": 45
+  },
+  "schema": {
+    "year": "int",
+    "month": "int",
+    "day": "int",
+    "hour": "int",
+    "minute": "int",
+	"second": "int"
+  }
+>>>>>>> 26d0d18787cbd1c711bfe23fe6a35b8e3215d686
 }
