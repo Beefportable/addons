@@ -3,8 +3,11 @@ FROM $BUILD_FROM
 
 ENV LANG C.UTF-8
 
-# Copy data for add-on
-COPY run.sh /
-RUN chmod a+x /run.sh
+# Create app directory
+WORKDIR /usr/src/app
 
-CMD [ "/run.sh" ]
+# Copy data for add-on
+COPY run.sh /usr/src/app
+RUN chmod a+x /usr/src/app/run.sh
+
+CMD [ "/usr/src/app/run.sh" ]
