@@ -1,7 +1,7 @@
 {
-  "name": "time_date_update",
-  "version": "0.0.1",
-  "slug": "time_date_update",
+  "name": "Time Date Update",
+  "version": "0.0.2",
+  "slug": "time-date-update",
   "description": "Set time and date",
   "hassio_api": "yes",
   "startup": "before",
