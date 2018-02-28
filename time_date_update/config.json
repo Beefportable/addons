@@ -1,8 +1,9 @@
 {
   "name": "time_date_update",
-  "version": "1",
+  "version": "0.0.1",
   "slug": "time_date_update",
   "description": "Set time and date",
+  "hassio_api": "yes",
   "startup": "before",
   "boot": "auto",
   "options": {
