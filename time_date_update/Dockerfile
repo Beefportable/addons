@@ -3,11 +3,11 @@ FROM $BUILD_FROM
 
 ENV LANG C.UTF-8
 
-# Create app directory
-WORKDIR /usr/src/app
+# Setup base
+RUN apk add --no-cache jq
 
 # Copy data for add-on
-COPY run.sh /usr/src/app
-RUN chmod a+x /usr/src/app/run.sh
+COPY run.sh /
+RUN chmod a+x /run.sh
 
-CMD [ "/usr/src/app/run.sh" ]
+CMD [ "/run.sh" ]
